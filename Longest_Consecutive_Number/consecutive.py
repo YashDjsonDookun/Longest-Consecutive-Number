@@ -13,12 +13,13 @@
 
 class Consecutive:
 	def longest_consecutive(self, nums1):
-		consecutiveNums = 1
+		consecutiveNums = 1 # My assumption is that a l unique number is a longest consecutive sequence in itself
+		# BubbleSort the array in ASC order
 		for i in range (len(nums1)):
 			for j in range (len(nums1) -1):
 				if (nums1[j] > nums1[j+1]):
 					nums1[j], nums1[j+1] = nums1[j+1], nums1[j]
-
+		# Checks if next number is indeed an exact increment of one
 		for i in range (len(nums1) -1):
 			if (nums1[i]+1 == nums1[i+1]):
 				consecutiveNums = consecutiveNums + 1
