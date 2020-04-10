@@ -24,4 +24,4 @@ class Consecutive:
 			if (nums1[i]+1 == nums1[i+1]):
 				consecutiveNums = consecutiveNums + 1
 		return consecutiveNums
-print(Consecutive().longest_consecutive([100,4,200,1,3,2]))
+#print(Consecutive().longest_consecutive([100,4,200,1,3,2]))
